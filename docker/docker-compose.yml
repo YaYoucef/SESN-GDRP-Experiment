@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: sesn-mongodb
+    ports:
+      - "27017:27017"
+
+  bigchaindb:
+    image: bigchaindb/bigchaindb:2.2.2
+    container_name: sesn-bigchaindb
+    depends_on:
+      - mongodb
+    environment:
+      - BIGCHAINDB_DATABASE_BACKEND=mongodb
+      - BIGCHAINDB_DATABASE_HOST=mongodb
+    ports:
+      - "9984:9984"

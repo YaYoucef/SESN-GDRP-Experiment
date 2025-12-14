@@ -1,0 +1,8 @@
+/keys
+/results
+/temp
+*.log
+*.tmp
+*.bak
+/scripts/user_generator_json.py
+/scripts/statistics.py
