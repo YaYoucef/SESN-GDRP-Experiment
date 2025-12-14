@@ -110,10 +110,3 @@ DAR,1000,0.00158
 CONSENT,1000,0.00241
 ```
 
-🔹 *Interpretation:*
-
-* RTBF latency ≈ 0.0020 s
-* DAR latency ≈ 0.0016 s
-* Consent management latency ≈ 0.0024 s
-
-These values align with the performance analysis reported in the paper.
