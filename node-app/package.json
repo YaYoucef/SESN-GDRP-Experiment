@@ -1,0 +1,14 @@
+{
+  "name": "sesn-node",
+  "version": "1.0.0",
+  "description": "SESN Node interacting with BigchainDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bigchaindb-driver": "^8.0.0",
+    "mongodb": "^6.0.0",
+    "uuid": "^9.0.0"
+  }
+}

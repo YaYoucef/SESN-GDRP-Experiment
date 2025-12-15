@@ -17,3 +17,9 @@ services:
       - BIGCHAINDB_DATABASE_HOST=mongodb
     ports:
       - "9984:9984"
+  sesn-node:
+    build: ./docker/nodejs
+    depends_on:
+      - bigchaindb1
+    networks:
+      - sesn-net
